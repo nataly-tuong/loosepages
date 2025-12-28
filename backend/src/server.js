@@ -1,9 +1,14 @@
-const express = require("express");
-const notesRoutes = require("./routes/notesRoutes");
+import express from "express";
+import notesRoutes from "./routes/notesRoutes.js";
+import connectDB from "./config/db.js";
+import dotenv from "dotenv/config";
 
 const app = express();
 
 app.use(express.json());
+
+connectDB();
+
 app.use("/api/notes", notesRoutes);
 
 app.listen(5001, () => {
