@@ -1,8 +1,9 @@
 const express = require("express");
-import notesRoutes from "./routes/notesRoutes.js";
+const notesRoutes = require("./routes/notesRoutes");
 
 const app = express();
 
+app.use(express.json());
 app.use("/api/notes", notesRoutes);
 
 app.listen(5001, () => {

@@ -1,15 +1,22 @@
-export function getAllNotes(req, res) {
+function getAllNotes(req, res) {
   res.status(200).send("You just fetched the notes");
 }
 
-export function createNote(req, res) {
+function createNote(req, res) {
   res.status(201).json({ message: "Note created successfully" });
 }
 
-export function updateNote(req, res) {
+function updateNote(req, res) {
   res.status(200).json({ message: "Post updated successfully" });
 }
 
-export function deleteNote(req, res) {
+function deleteNote(req, res) {
   res.status(200).json({ message: "Post deleted successfully" });
 }
+
+module.exports = {
+  getAllNotes,
+  createNote,
+  updateNote,
+  deleteNote,
+};
