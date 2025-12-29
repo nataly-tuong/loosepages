@@ -12,6 +12,8 @@ app.use(express.json());
 
 connectDB();
 
+app.use(express.json());
+
 app.use("/api/notes", notesRoutes);
 
 app.listen(PORT, () => {
