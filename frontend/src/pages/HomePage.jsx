@@ -1,9 +1,15 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
+import RateLimitedUI from "../components/RateLimitedUI";
 
 const HomePage = () => {
+  const [isRateLimited, setRateLimited] = useState(true);
+
   return (
     <div className="bg-[#090909] min-h-screen">
       <Navbar />
+
+      {isRateLimited && <RateLimitedUI />}
     </div>
   );
 };
