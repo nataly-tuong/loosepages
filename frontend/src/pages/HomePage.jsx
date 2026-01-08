@@ -34,7 +34,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="bg-[#090909] min-h-screen">
+    <div className="min-h-screen">
       <Navbar />
 
       {isRateLimited && <RateLimitedUI />}

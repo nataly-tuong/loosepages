@@ -7,9 +7,10 @@ const NoteCard = ({ note }) => {
     <Link
       to={`/note/${note._id}`}
       className="block bg-black/80 rounded-xl p-4
-               border border-white/15 border-t-[5px] border-t-[rgba(120,120,239,1)]
-               transition-all duration-200
-               hover:shadow-[0_0_30px_rgba(120,120,239,0.45)] hover:border-white/80"
+           border border-white/15 border-t-[5px] border-t-[rgba(120,120,239,1)]
+           transition-all duration-200
+           hover:shadow-[0_0_30px_rgba(120,120,239,0.45)] hover:border-white/80
+           mx-4 sm:mx-8 md:mx-auto"
       style={{
         backgroundImage:
           "radial-gradient(800px 200px at 150% 130%, rgba(120,120,239,0.3), transparent 70%)",
