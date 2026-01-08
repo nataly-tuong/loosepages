@@ -10,7 +10,7 @@ const Navbar = () => {
           "radial-gradient(500px 80px at 20% 0%, rgba(120,120,239,0.3), transparent 70%)",
       }}
     >
-      <div className="mx-auto max-w-6xl px-4 py-4">
+      <div className="mx-auto max-w-6xl px-12 py-4">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-noto text-white font-bold text-primary tracking-tighter">
             LoosePages
