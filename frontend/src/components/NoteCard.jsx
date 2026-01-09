@@ -7,12 +7,12 @@ const NoteCard = ({ note }) => {
     <Link
       to={`/note/${note._id}`}
       className="block bg-black/80 rounded-xl p-4
-               border border-white/15 border-t-[5px] border-t-[rgba(120,120,239,1)]
+               border border-white/15 border-t-[5px] border-t-mainAccent
                transition-all duration-200
                hover:shadow-[0_0_30px_rgba(120,120,239,0.45)] hover:border-white/80"
       style={{
         backgroundImage:
-          "radial-gradient(800px 200px at 150% 130%, rgba(120,120,239,0.3), transparent 70%)",
+          "radial-gradient(800px 200px at 150% 130%, secondaryAccent, transparent 70%)",
       }}
     >
       <div className="flex flex-col gap-2">

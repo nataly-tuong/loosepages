@@ -3,8 +3,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-mainAccent: #ff0000;
-  --color-secondaryAccent: #ffffff;
+  --color-mainAccent: rgba(120,120,239,1);
+  --color-secondaryAccent: rgba(120,120,239,0.10);
   --font-noto: "Noto", sans-serif;
   --font-bodoni: "Bodoni Moda", sans-serif;
 }

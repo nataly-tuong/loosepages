@@ -12,7 +12,7 @@ const App = () => {
           background: `
         radial-gradient(120% 80% at 0% 100%, rgba(120,120,239,0.10), transparent 60%),
         radial-gradient(120% 80% at 100% 100%, rgba(120,120,239,0.10), transparent 60%),
-        #090909
+        #0f0f0f
     `,
         }}
       />
